@@ -122,11 +122,11 @@ $(document).ready(function(e) {
 
 
 function changeStar(x) {
-  x.src = './unfinishedStar.png';
+  x.src = 'images/unfinishedStar.png';
   
 }
 
 function normalStar(x) {
-  x.src = './deathStar.png';
+  x.src = 'images/deathStar.png';
   
 }
