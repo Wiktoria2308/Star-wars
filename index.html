@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Star wars</title>
+    <script src="script.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">  
+    <!-- Custom styles for this template -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+     
+    <img src="title.png" alt="star wars" class="title">
+
+    </header>
+
+    <h2 class="heading">HERE you can see all of the Star Wars characters in a random order.</h2>
+   
+    <button id="StarWars" onclick="showStarWars()">Show character</button>
+   
+    <p class="result" id="starwars">Darth Vader</p>
+    <button id="StarWars" onclick="showPrevious()"> Previous</button>
+    <p id="image">
+        <img src="darthVader.png" id="character">
+    </p>
+   
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted"  width="100%" style="display: none;"  id="hyperspace" >
+            <source src="./videoplayback.mp4" type="video/mp4">
+        </video>
+        <figure>
+            <img src="starDestroyer.png" width="50%" style="display: none;" id="starDestroyer">
+            </figure>
+        
+    <figure>
+        <img src="ship.png" width="5%"  class="ship2" alt="ship" id="ship1">
+        </figure>
+
+    <figure>
+        <img src="ship2.png" width="10%"  class="shipRebel" alt="ship1" onclick="hyper()" id="ship2">
+        </figure>
+        <figure>
+            <img src="ship.png" width="5%"  class="ship3" alt="ship" id="ship3">
+            </figure>
+      
+    <figure>
+    <img src="naboo.png" width="10%"  class="naboo" alt="naboo">
+    </figure>
+    
+    <figure>
+    <img src="deathStar.png" width="30%"  class="deathStar" alt="deathStar" onmouseover="changeStar(this)" onmouseout="normalStar(this)">
+    </figure>
+
+    <footer>
+        <figure><img src="generatedtext.png"></figure>
+    </footer>
+</body>
+
+</html>
