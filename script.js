@@ -47,6 +47,9 @@ function hyper() {
  
   
   $('video').on('ended',function(){ $(this).hide();$("#starDestroyer").show() });
+   
+  document.getElementById("naboo").src = 'images/tatooine.gif';
+  document.getElementById("deathS").src = 'images/unfinishedStar.png';
 
   }
 
@@ -121,12 +124,3 @@ $(document).ready(function(e) {
 
 
 
-function changeStar(x) {
-  x.src = 'images/unfinishedStar.png';
-  
-}
-
-function normalStar(x) {
-  x.src = 'images/deathStar.png';
-  
-}
