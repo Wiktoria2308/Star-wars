@@ -5,17 +5,26 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+
 }
 
 body {
-  background-image: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
- 
+  background-image: url('http://wallpapercave.com/wp/pEeUsp1.jpg');
+  font-family: 'Days One', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 .heading {
-color: yellow;
-font-family: 'Days One', sans-serif;
-text-align: center;
-margin-bottom: 50px;
+  color: yellow;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  font-size: 3vw;
+  padding-bottom: 1em;
 }
 
 .title {
@@ -26,47 +35,48 @@ margin-bottom: 50px;
 }
 
 .result {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: transparent;
   color: white;
-  font-family: 'Days One', sans-serif;
   font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-  height: 100px;
+  font-variant: normal;
+  font-weight: 500;
+  height: 3em;
   text-align: center;
+  line-height: 1em;
   font-size: 20px;
   border: 2px dotted white;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
-  display: block;
-  padding: 30px 30px;
+  width: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* it centering text in the middle of parent*/
 }
 
 #StarWars {
-  
-  height: 50px;
-  background-color: transparent; 
-  color: yellow; 
+  height: 2.5em;
+  background-color: transparent;
+  color: yellow;
   border: 2px solid yellow;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  width: 20%;
-  margin-top: 20px;
+  width: 12em;
 }
 #image {
   height: 400px;
+  margin-top: 1.5em;
 }
 
 #click {
   color: yellow;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 10%;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  font-size: 1.2em;
+  font-weight: 100;
 }
 
 #character {
@@ -75,61 +85,51 @@ margin-bottom: 50px;
   margin-right: auto;
   max-height: 400px;
   max-width: 400px;
- 
 }
 
-
 .deathStar {
-
   display: block;
   margin-left: 50px;
   margin-right: auto;
   margin-bottom: 250px;
-  
 }
 
- 
 .naboo {
-
   margin-left: auto;
   display: block;
   margin-bottom: 250px;
   margin-right: 100px;
   margin-top: 250px;
- 
 }
 
 .shipRebel {
-
   position: relative;
   display: block;
   margin-left: 150px;
-  margin-right: auto;
-  margin-bottom: 100px;
-  animation: shake 2s infinite;
+  margin-right: 100px;
+  margin-bottom: 80px;
+  animation: shake 1s infinite;
   animation-direction: alternate;
   transform: skew(20deg);
- 
 }
 
 .ship3 {
-  
   position: relative;
   display: block;
   margin-left: 100px;
   margin-right: auto;
   margin-bottom: 50px;
-  animation: shimmy2 2s infinite;
+  animation: shimmy2 1s infinite;
   animation-direction: alternate;
 }
 .ship2 {
-  margin-top: 50px;
+  margin-top: 70px;
   position: relative;
   display: block;
   margin-left: 100px;
   margin-right: auto;
-  margin-bottom: 100px;
-  animation: shimmy 2s infinite;
+  margin-bottom: 50px;
+  animation: shimmy 1s infinite;
   animation-direction: alternate;
 }
 
@@ -141,23 +141,24 @@ margin-bottom: 50px;
 }
 
 footer {
- 
   text-align: center;
-  
 }
 
 @keyframes shake {
   0% {
+
     transform: skewY(20deg);
   }
+
   100% {
+   
     transform: skewY(-20deg);
   }
 }
 
 @keyframes shimmy {
   0% {
-    transform: translate(0, 0);    
+    transform: translate(0, 0);
   }
   100% {
     transform: translate(50px, 60px);
@@ -166,10 +167,20 @@ footer {
 
 @keyframes shimmy2 {
   0% {
-    transform: translate(0, 0);    
+    transform: translate(0, 0);
   }
   100% {
     transform: translate(50px, -60px);
   }
 }
 
+@media screen and (max-width: 700px) {
+  #ship1, #ship3 {
+    width: 2.5em;
+   
+  }
+  #ship2 {
+    width: 5em;
+  }
+
+}
