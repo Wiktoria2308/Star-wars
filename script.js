@@ -12,26 +12,53 @@ function showPrevious() {
 
 }
 
+// function showStarWars() {
+//   let random = (Math.floor(Math.random() * 88));
+// let url = 'https://akabab.github.io/starwars-api/api/id/' + random + '.json';
+//     fetch(url)
+//                 .then(response => response.json())
+//                 .then(data => {
+
+//                     previousName = document.getElementById("starwars").textContent;
+
+//                     document.getElementById("starwars").innerHTML = data.name;
+                    
+//                     let src = data.image;
+
+//                     previous = document.getElementById("character").src;
+
+//                     let image = `<img src='${src}' id="character"/>`;
+                   
+//                     document.getElementById("image").innerHTML = image;
+                    
+                   
+                  
+//                 });
+// }
+
 function showStarWars() {
-  let random = (Math.floor(Math.random() * 88));
-let url = 'https://akabab.github.io/starwars-api/api/id/' + random + '.json';
+  //let random = (Math.floor(Math.random() * 88));
+//let url = 'https://akabab.github.io/starwars-api/api/id/' + random + '.json';
+  let url = 'https://akabab.github.io/starwars-api/api/id/all.json';
     fetch(url)
                 .then(response => response.json())
                 .then(data => {
 
+                    for(let i = 1; i < 89; i++)
+                    {
                     previousName = document.getElementById("starwars").textContent;
 
-                    document.getElementById("starwars").innerHTML = data.name;
+                    document.getElementById("starwars").innerHTML = data[i].name;
                     
-                    let src = data.image;
+                    let src = data[i].image;
 
                     previous = document.getElementById("character").src;
 
-                    let image = `<img src='${src}' id="character"/>`;
+                    let image = `<img src='${src}' id="{data[i].id}"/>`;
                    
                     document.getElementById("image").innerHTML = image;
                     
-                   
+                    }
                   
                 });
 }
