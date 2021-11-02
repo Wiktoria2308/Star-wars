@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star wars</title>
-    <script src="script.js"></script>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,8 +13,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
-
 </head>
 
 <body>
@@ -26,15 +24,14 @@
     </header>
 
     <h2 class="heading">HERE you can see all of the Star Wars characters in a random order.</h2>
-   
-    <button id="StarWars" onclick="showStarWars()">Show character</button>
-   
     <p class="result" id="starwars">Darth Vader</p>
-    <button id="StarWars" onclick="showPrevious()"> Previous</button>
     <p id="image">
         <img src="images/darthVader.png" id="character">
     </p>
-   
+ 
+    <button id="StarWars" class="btn_star_wars" onclick="showStarWars()">Next character</button>
+    <button id="StarWars" class="btn_star_wars" onclick="showPrevious()"> Previous</button>
+  
     <p id="click">Click on the Rebellion ship ;) </p>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted"  width="100%" style="display: none;"  id="hyperspace" >
             <source src="./videoplayback.mp4" type="video/mp4">
@@ -44,14 +41,14 @@
             </figure>
         
     <figure>
-        <img src="images/ship.png" width="5%"  class="ship2" alt="ship" id="ship1">
+        <img src="images/ship.png" class="star_ship ship2" alt="ship" id="ship1">
         </figure>
 
     <figure>
-        <img src="images/ship2.png" width="10%"  class="shipRebel" alt="ship1" onclick="hyper()" id="ship2">
+        <img src="images/ship2.png" class="shipRebel" alt="ship1" onclick="hyper()" id="ship2">
         </figure>
         <figure>
-            <img src="images/ship.png" width="5%"  class="ship3" alt="ship" id="ship3">
+            <img src="images/ship.png" class="star_ship ship3" alt="ship" id="ship3">
             </figure>
       
     <figure>
@@ -65,6 +62,7 @@
     <footer>
         <figure><img src="images/generatedtext.png"></figure>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

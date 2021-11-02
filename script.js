@@ -41,7 +41,6 @@ function hyper() {
   document.getElementById("ship1").style.display = "none";
   document.getElementById("ship2").style.display = "none";
   document.getElementById("ship3").style.display = "none";
-  
   document.getElementById("hyperspace").style.display = "block";
   
  
@@ -53,74 +52,7 @@ function hyper() {
 
   }
 
-  
 
-
-$(document).ready(function(e) {
-  function goRight() {
-    $(".ship3").animate({
-    left: 900
-    
-  }, 5000, function() {
-     setTimeout(goLeft, 50);
-  });
-
-}
-function goLeft() {
-    $(".ship3").animate({
-    left: 0
-  }, 5000, function() {
-     setTimeout(goRight, 50);
-  });
- 
-}
-setTimeout(goRight, 50);
-});
- 
-
-
-
-$(document).ready(function(e) {
-  function goRight() {
-      $(".shipRebel").animate({
-      left: 1000
-      
-    }, 5000, function() {
-       setTimeout(goLeft, 50);
-    });
-  
-  }
-  function goLeft() {
-      $(".shipRebel").animate({
-      left: 0
-    }, 5000, function() {
-       setTimeout(goRight, 50);
-    });
-   
-  }
-  setTimeout(goRight, 50);
-});
-
-$(document).ready(function(e) {
-  function goRight() {
-      $(".ship2").animate({
-      left: 900
-      
-    }, 5000, function() {
-       setTimeout(goLeft, 50);
-    });
-  
-  }
-  function goLeft() {
-      $(".ship2").animate({
-      left: 0
-    }, 5000, function() {
-       setTimeout(goRight, 50);
-    });
-   
-  }
-  setTimeout(goRight, 50);
-});
 
 
 
