@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Star wars</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-          <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">  
-    <!-- Custom styles for this template -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <link href="style.css" rel="stylesheet">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Star wars</title>
+   <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet"> 
+   <!-- Custom styles for this template -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <link href="style.css" rel="stylesheet">
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
-
-<body>
-
-    <header>
-     
-    <img src="images/title.png" alt="star wars" class="title">
-
-    </header>
-
-    <h2 class="heading">HERE you can see all of the Star Wars characters in a random order.</h2>
-    <p class="result" id="starwars">Darth Vader</p>
-    <p id="image">
-        <img src="images/darthVader.png" id="character">
-    </p>
  
-    <button id="StarWars" class="btn_star_wars" onclick="showStarWars()">Next character</button>
-    <button id="StarWars" class="btn_star_wars" onclick="showPrevious()"> Previous</button>
-  
+<body>
+ 
+   <header>
+   
+   <img src="images/title.png" alt="star wars" class="title">
+ 
+   </header>
+ 
+   <h2 class="heading">HERE you can see all of the Star Wars characters in a random order.</h2>
+   <p class="result" id="starwars">Darth Vader</p>
+   <p id="image">
+       <img src="images/darthVader.png" id="character">
+   </p>
+   <button id="StarWars" class="btn_star_wars" onclick="showStarWars()">Next character</button>
+   <button id="StarWars" class="btn_star_wars" onclick="showPrevious()"> Previous</button>
     <p id="click">Click on the Rebellion ship ;) </p>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted"  width="100%" style="display: none;"  id="hyperspace" >
-            <source src="./videoplayback.mp4" type="video/mp4">
-        </video>
-
-        <figure >
-            <img src="images/starDestroyer.png" width="50%" style="display: none;" id="starDestroyer">
-            </figure>
-
-       
-    <figure>
-        <img src="images/ship.png" class="star_ship ship2" alt="ship" id="ship1">
-        </figure>
-
-    <figure>
-        <img src="images/ship2.png" class="shipRebel" alt="ship1" onclick="hyper()" id="ship2">
-        </figure>
-        <figure>
-            <img src="images/ship.png" class="star_ship ship3" alt="ship" id="ship3">
-            </figure>
+       <video playsinline="playsinline" autoplay="autoplay" muted="muted"  width="100%" style="display: none;"  id="hyperspace" >
+           <source src="./videoplayback.mp4" type="video/mp4">
+       </video>
+       <figure>
+           <img src="images/starDestroyer.png" width="50%" style="display: none;" id="starDestroyer">
+           </figure>
       
-    <figure>
-    <img src="images/naboo.png" width="10%"  class="naboo" alt="naboo" id="naboo">
-    </figure>
+   <figure>
+       <img src="images/ship.png" class="star_ship ship2" alt="ship" id="ship1">
+       </figure>
+ 
+   <figure>
+       <img src="images/ship2.png" class="shipRebel" alt="ship1" onclick="hyper()" id="ship2">
+       </figure>
+       <figure>
+           <img src="images/ship.png" class="star_ship ship3" alt="ship" id="ship3">
+           </figure>
     
-    <figure>
-    <img src="images/deathStar.png" width="30%"  class="deathStar" alt="deathStar"  id="deathS">
-    </figure>
-
-    <footer>
-        <figure><img src="images/generatedtext.png"></figure>
-    </footer>
-    <script src="script.js"></script>
+   <figure>
+   <img src="images/naboo.png" width="10%"  class="naboo" alt="naboo" id="naboo">
+   </figure>
+  
+   <figure>
+   <img src="images/deathStar.png" width="30%"  class="deathStar" alt="deathStar"  id="deathS">
+   </figure>
+ 
+   <footer>
+       <figure><img src="images/generatedtext.png"></figure>
+   </footer>
+   <script src="script.js"></script>
 </body>
-
+ 
 </html>
