@@ -68,6 +68,7 @@ margin-bottom: 50px;
 
 #image {
   height: 400px;
+  margin-top: 1.5em;
 }
 
 #click {
@@ -86,25 +87,19 @@ margin-bottom: 50px;
   max-width: 400px;
 }
 
-
 .deathStar {
-
   display: block;
   margin-left: 50px;
   margin-right: auto;
   margin-bottom: 250px;
-  
 }
 
- 
 .naboo {
-
   margin-left: auto;
   display: block;
   margin-bottom: 250px;
   margin-right: 100px;
   margin-top: 250px;
- 
 }
 
 .shipRebel {
@@ -188,3 +183,13 @@ footer img{
 }
 }
 
+@media screen and (max-width: 700px) {
+  #ship1, #ship3 {
+    width: 2.5em;
+   
+  }
+  #ship2 {
+    width: 5em;
+  }
+
+}

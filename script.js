@@ -36,6 +36,8 @@ let url = 'https://akabab.github.io/starwars-api/api/id/' + random + '.json';
                 });
 }
 
+
+
 function hyper() {
   document.getElementById("hyperspace").load();
   document.getElementById("ship1").style.display = "none";
